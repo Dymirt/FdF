@@ -42,8 +42,8 @@ $(NAME): $(OBJ)
 
 	@make -C $(LIBFT_DIR)
 	@make -C $(MINILIBX_DIR)
-	@$(CC) $(CFLAGS) -o $(NAME) $(OBJ) -I$(LIBFT_DIR) -L$(LIBFT_DIR) -lft -L$(MINILIBX_DIR) -lmlx -lXext -lX11 -lm
-#	@$(CC) $(CFLAGS) -o $(NAME) $(OBJ) -I$(LIBFT_DIR) -I$(MINILIBX_DIR) -L$(LIBFT_DIR) -lft -L$(MINILIBX_DIR) -lmlx -framework OpenGL -framework AppKit
+#	@$(CC) $(CFLAGS) -o $(NAME) $(OBJ) -I$(LIBFT_DIR) -L$(LIBFT_DIR) -lft -L$(MINILIBX_DIR) -lmlx -lXext -lX11 -lm
+	@$(CC) $(CFLAGS) -o $(NAME) $(OBJ) -I$(LIBFT_DIR) -I$(MINILIBX_DIR) -L$(LIBFT_DIR) -lft -L$(MINILIBX_DIR) -lmlx -framework OpenGL -framework AppKit
 
 # Rule for compiling individual source files
 $(OBJDIR)%.o: %.c
@@ -58,7 +58,6 @@ clean:
 
 # Rule for fully cleaning the project (removing executable and object files)
 fclean: clean
-	rm -r $(MINILIBX_DIR)
 	rm -f $(NAME)
 	@make fclean -C $(LIBFT_DIR)
 
