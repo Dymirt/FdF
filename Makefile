@@ -34,7 +34,7 @@ OBJ = $(SRC:.c=.o)
 OBJ := $(addprefix $(OBJDIR),$(OBJ))
 
 # Rule for compiling libft
-MINILIBX_DIR = minilibx-mac-osx/
+MINILIBX_DIR = minilibx_macos/
 
 
 # Main rule for compiling the project

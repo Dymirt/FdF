@@ -6,14 +6,14 @@
 /*   By: dkolida <dkolida@student.42warsaw.pl>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 23:09:30 by dkolida           #+#    #+#             */
-/*   Updated: 2024/07/22 15:16:39 by dkolida          ###   ########.fr       */
+/*   Updated: 2024/07/22 15:44:07 by dkolida          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FDF_H
 # define FDF_H
 # include "Libft/libft.h"
-# include "minilibx-mac-osx/mlx.h"
+# include "minilibx_macos/mlx.h"
 # include <math.h>
 # include <fcntl.h>
 
